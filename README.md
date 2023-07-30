@@ -1,10 +1,11 @@
 # Forward or Backward? 
 
+This project aims to show how expensive extra function calls can be when defining a loop boundary.
+
 ## Description
 
-This project aims to show how expensive extra function calls can be when defining a loop boundary.
-In this example, we use the number of names in the path as the loop boundary.
-We can either start at the beginning of the path and work forward or at the end and work backward.  
+In this example, we use the number of names in the path as the loop boundary. 
+We can either start at the beginning of the path and work forward or at the end and work backward. 
 The results show that working backward in a particular case is six times faster than working forward.
 The reason for this is that in the first case, we call the method `Path::getNameCount` on every iteration of the loop, whereas in the last case, we call this function once at the beginning of the circle.
 
