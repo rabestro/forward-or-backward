@@ -50,9 +50,15 @@ public class MyBenchmark {
 
 ## Running the benchmark
 
-To execute the benchmark, access your project folder through the command line and execute the `mvn clean verify` command.
+To execute the benchmark, access your project folder through the command line and execute the following command.
+```shell
+mvn clean verify
+```
 This action will generate the `target` folder within your project, housing the benchmarks Uber-JAR file that you'll utilize.
-Next, proceed by running the `java -jar target/benchmarks.jar` command from the same location.
+Next, proceed by running the following command from the same location.
+```shell
+java -jar target/benchmarks.jar
+```
 Once all benchmarks conclude, you'll receive the following completion message.
 
 ```text
@@ -61,11 +67,6 @@ MyBenchmark.forwardLoop  thrpt   25   86563253.402 ±  198686.009  ops/s
 MyBenchmark.reverseLoop  thrpt   25  517055621.588 ± 2150399.471  ops/s
 ```
 
-I added a simple graph using the mermaid.js to represent digital data better.
+I added a simple graph to represent digital data better.
 
-```mermaid
-pie showData
-    title Million operations in second
-    "Forward" : 86
-    "Reverse" : 517
-```
+![graph chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vROjoNO8NJuXRnyfNje9XnU-YhXEsEzxD1lIzXU2LYVekUK2fYCg2JxkaUhoyi77Ust-EvJ4d5LppJ6/pubchart?oid=1966749143&format=image)
